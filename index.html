@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>SUPERFLIGHT</title>
+</head>
+
+<body>
+    <!--* HEADER *-->
+    <header class="container-fluid py-2">
+        <nav class="row shadow">
+            <a class="d-flex text-black text-decoration-none py-2 px-4" href="">
+                <img class="me-2" src="./assets/media/logo_superflight.svg" alt="Logo" style="width: 40px;">
+                <h1 class="display-6 fs-2">SUPERFLIGHT</h1>
+            </a>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+    <!--* CONTENIDO *-->
+    <section class="container-fluid">
+        <article class="row">
+            <!--* MAPAMUNDI -->
+            <div class="col-10">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <!--? MAPAMUNDI -->
+                    <div class="col">
+                        <div class="p-3 p-md-2 pe-md-0 p-xl-5 border-bottom">
+                            <img src="./assets/media/mapamundi.png" class="w-100 rounded-3 mb-2" alt="mapa">
+                            <select class="form-select" id="stDestinos">
+                                <option disabled selected>Destino</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- END MAPAMUNDI -->
+                    <div class="col">
+                        <div class="p-3 p-md-2 ps-md-0 p-xl-5 ps-xl-0 border-bottom">
+                            <div class="row p-3 border rounded-3">
+                                <div class="col">
+                                    <label class="display-6 fs-6 fw-normal mb-2" for="txtCantidadPasajeros">Cantidad de
+                                        Pasajeros:</label>
+                                    <input type="number" class="form-control mb-2" id="txtCantidadPasajeros" min="0"
+                                        value="0">
+                                </div>
+                                <div class="col">
+                                    <label class="display-6 fs-6 fw-normal mb-2" for="txtPesoMaleta">Peso de
+                                        Maleta:</label>
+                                    <div class="d-flex">
+                                        <input type="number" class="form-control mb-2" id="txtPesoMaleta" min="0"
+                                            value="0">
+                                        <p class="fw-bold ms-2 mt-1">Kg</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="display-6 fs-5 fw-normal my-2 d-block">Tipo de Silla:</p>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="options" id="ckNormal"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-success w-100" for="ckNormal">Normal <img
+                                            src="./assets/media/silla_normal.svg" alt="Normal"><br><span class="fw-bold fs-5">Gratis</span></label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="options" id="ckEjecutiva"
+                                        autocomplete="off">
+                                    <label class="btn btn-success w-100" for="ckEjecutiva">Ejecutiva <img
+                                            src="./assets/media/silla_ejecutiva.svg" alt="Ejecutiva"><br><span class="fw-bold fs-5">+$20.000</span></label>
+                                </div>
+                                <div class="col mt-3 mt-sm-0">
+                                    <input type="radio" class="btn-check" name="options" id="ckVIP" autocomplete="off">
+                                    <label class="btn btn-success w-100" for="ckVIP">VIP <img
+                                            src="./assets/media/silla_vip.svg" alt="VIP"><br><span class="fw-bold fs-5">+$40.000</span></label>
+                                </div>
+                            </div>
+                            <div class="bg-primary bg-opacity-25 rounded-3 p-3 mt-4 shadow" id="contentTicket">
+                                
+                            </div>
+                            <hr>
+                            <span class="text-danger fw-semibold" id="errorAlert"></span>
+                            <button class="btn btn-primary w-100" id="btnLiquidarTicket">Liquidar Ticket</button>
+                            <div class="border-top mt-2" id="containerTicket">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAPAMUNDI -->
+            <!--* LIQUIDAR TICKET -->
+            <div class="col-2 md">
+                <p class="display-6">¡Prueba tu Suerte!</p>
+                <img src="https://static.vecteezy.com/system/resources/previews/008/854/495/non_2x/isolated-casino-composition-for-design-element-free-png.png"
+                    class="w-100" alt="casino">
+            </div>
+            <!-- END LIQUIDAR TICKET -->
+        </article>
+    </section>
+    <!-- END CONTENIDO -->
+
+    <!--? SCRIPTS -->
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

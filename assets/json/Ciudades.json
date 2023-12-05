@@ -1,0 +1,27 @@
+[
+    {
+        "id": 0,
+        "nombre": "Medellín",
+        "precio": 100000
+    },
+    {
+        "id": 1,
+        "nombre": "Cali",
+        "precio": 90000
+    },
+    {
+        "id": 2,
+        "nombre": "Barranquilla",
+        "precio": 150000
+    },
+    {
+        "id": 3,
+        "nombre": "Bogotá",
+        "precio": 200000
+    },
+    {
+        "id": 4,
+        "nombre": "Pereira",
+        "precio": 40000
+    }
+]
